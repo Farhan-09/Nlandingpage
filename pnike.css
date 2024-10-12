@@ -1,0 +1,268 @@
+@font-face {
+    font-family: gilroy;
+    src: url(Gilroy-Regular.otf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    font-family: gilroy;
+   
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow: hidden;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #303B4D;
+}
+#left{
+    height: 100%;
+    width: 60%;
+}
+#right{
+    height: 100%;
+    width: 40%;
+    background: linear-gradient(to bottom, #fe2756,#ff557a);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 36% 100%);   
+}
+#main>img{
+    height: 500px;
+    position: absolute;
+    top: 40%;
+    left: 68%;
+    transform: translate(-50%,-50%) rotatez(-30deg);
+    filter: brightness(1.1);
+    z-index: 4;
+    animation-name: moveshoe;
+    animation-delay: 2.7s;
+    animation-duration: 3s;
+
+}
+#nav{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    
+}
+#nav img{
+    height: 40%;
+}
+#one{
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+    
+    
+
+}
+#two{
+    display: flex;
+    gap: 10px;
+ 
+}
+#three{
+  
+    display: flex; 
+    
+
+}
+#one a{
+    text-decoration: none;
+   
+    font-size: 15px;
+    font-weight: 100;
+}
+#two i{
+    font-size: 15px;
+}
+#two h4{
+    font-size: 15px;
+   
+
+}    
+#three i{
+    font-weight: 100;
+   
+    font-size: 15px;
+}
+#three h1{
+font-size: 15px;
+margin-right: 10px;
+font-weight: 100;
+
+
+
+}
+#text{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    z-index: 4;
+}   
+#text h5{
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    
+}
+#text h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 5px;
+   
+}
+h3 i{
+    color: gold;
+    letter-spacing: 15px;
+    font-size: 20px;
+}
+#text h3{
+    margin-bottom:30px ;
+}
+#text p{
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 100;
+
+    margin-bottom: 20px;
+}
+#text button{
+    background-color: rgb(249, 101, 101);
+    padding: 5px 25px;
+    border-radius: 100px;
+    margin-top: 20px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 900;
+   
+}
+#border{
+    height: 100%;
+    width: 100%;
+    background-color: #303B4D;
+    position: absolute;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    z-index: 4;
+}
+
+
+
+@keyframes anime {
+    0%{
+        top: 0%;
+    }
+    100%{
+        top: -100%;
+    }
+    
+}
+#border img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    animation-name: imganime;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+}
+@keyframes imganime {
+    0%{
+       
+        height: 40px;
+    }
+   
+    50%{
+       height: 70px;
+    }
+    100%{
+        height: 40px;
+    }
+    
+}
+#text2 h1{
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%,-50%);
+    font-size: 600px;
+    letter-spacing: 90px;
+    font-weight: 900;
+    text-transform: lowercase;
+color: #00000045;
+font-family: gilroy;
+
+
+}
+#downnav{
+    height: 80px;
+    width: 80%;
+  
+    position: absolute;
+   
+    bottom: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-right: 60px;
+    font-size: 15px;
+    padding-bottom: 10px;
+
+}
+#add{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 40px 90px;
+    font-size: 25px;
+    font-family: gilroy;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#add h5{
+    color: #303B4D;
+    letter-spacing: 5px;
+}
+@keyframes moveshoe {
+    0%{
+       
+    top: -100%;
+    }
+    100%{
+       top: 40%;
+       left: 68%;
+
+    }
+    
+}
+
+
+
+
+
+
+
